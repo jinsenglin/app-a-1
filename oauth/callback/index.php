@@ -17,7 +17,7 @@
 	$idtoken=json_decode($result, true)["id_token"];
 	if (isset($idtoken) && $idtoken) {
 		$_SESSION['islogged'] = true;
-		echo "<a href='sign-out.php'>Sign out</a>";
+		echo "<a href='/app-a-1/sign-out.php'>Sign out</a>";
 	}
 	else {
 		echo "?";
